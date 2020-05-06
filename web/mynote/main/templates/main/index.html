@@ -1,0 +1,18 @@
+{% extends "main/base.html" %}
+{% block title %} Note List {% endblock %}
+
+{% block content %}
+    Add Note
+    <form method="POST" action="/index/">
+        {{form}}
+        <button type="submit", name="save">Add</button>
+    </form>
+
+    {% if note_list %}
+        {% for nt in note_list %}
+            <li>{{nt.tag}}</li>
+        {% endfor%}
+    {% else% }
+        <p>No note available</p>
+    {% endif %}
+{% endblock %}

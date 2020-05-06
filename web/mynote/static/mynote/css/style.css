@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&family=Rubik&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+  }
+  
+.offset:before{
+    display:block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+  }
+
+/*---------Navigation---------*/
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+    top: 0;
+    position: fixed;
+    height: 9vh;
+  }
+  
+  .navbar-brand img {
+    height: 2rem;
+  }
+  
+  .navbar-nav li { 
+    padding-right: .7rem;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #1ebba3;
+  }
+
+
+  /*--------Landing Page---------*/
+.home-inner {
+  background-image: url(../img/notebook.jpeg);
+  opacity: 0.3;
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top:30%;
+  z-index: 1;
+  color:#02B875;
+  /* text-transform: uppercase; */
+  bottom: 20%;
+  overflow-y: scroll;
+  height: 60vh;
+}
+
+.caption h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.btn-success {
+  color: black;
+  border-radius: 1rem;
+}
+
+
+
+
+/**-------contact section -------*/
+footer {
+  color: #02B875;
+  padding: 1rem 0rem 1rem;
+  margin-top: 0rem;
+  left:0;
+  bottom:0;
+  width: 100%;
+  text-align: center;
+  height: 9vh;
+  position: absolute;
+}
+
+
+/* .sidenav{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color:#818181;
+    display:block;
+    font-size: 25px;
+}
+
+.sidenav a:hover {
+    color:#f1f1f1;
+}
+
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+} */
