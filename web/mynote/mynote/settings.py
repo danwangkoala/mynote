@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'main.apps.MainConfig',
+    'registration.apps.RegistrationConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,8 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-    'main.apps.MainConfig',
-    'registration.apps.RegistrationConfig',
 ]
 
 MIDDLEWARE = [
@@ -127,7 +127,9 @@ STATICFILES_DIRS = [
 
 CRISPY_TEMPLATE_PACK="bootstrap4"
 
-LOGIN_REDIRECT_URL = "/"
-LOGOUT_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "/index"
+LOGOUT_REDIRECT_URL = "/login"
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 

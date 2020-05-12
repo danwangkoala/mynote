@@ -13,8 +13,12 @@ body {
     margin-top: -4rem;
   }
 
+  .navbar-brand img {
+    height: 1.8rem;
+  }
+
 /*---------Navigation---------*/
-.navbar {
+/* .navbar {
     text-transform: uppercase;
     font-weight: 700;
     font-size: .9rem;
@@ -22,12 +26,10 @@ body {
     background: rgba(0, 0, 0, 0.6) !important;
     top: 0;
     position: fixed;
-    height: 9vh;
+    height: 3rem;
   }
   
-  .navbar-brand img {
-    height: 2rem;
-  }
+
   
   .navbar-nav li { 
     padding-right: .7rem;
@@ -41,6 +43,17 @@ body {
   .navbar-dark .navbar-nav .nav-link.active,
   .navbar-dark .navbar-nav .nav-link:hover {
     color: #1ebba3;
+  } */
+
+  /*---------Index Page---------*/
+  .content {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top:3rem;
+    z-index: 1;
+    overflow-y: scroll;
+    background-color: aquamarine;
   }
 
 
@@ -54,18 +67,19 @@ body {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top:30%;
+  top:20%;
   z-index: 1;
   color:#02B875;
   /* text-transform: uppercase; */
-  bottom: 20%;
+  /* bottom: 20%; */
   overflow-y: scroll;
-  height: 60vh;
+  height: 70vh;
 }
 
 .caption h3 {
   font-size: 1.5rem;
   padding-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .btn-success {
@@ -93,7 +107,7 @@ footer {
 /* .sidenav{
     height: 100%;
     width: 160px;
-    position: fixed;
+    position: relative;
     z-index: 1;
     top: 0;
     left: 0;

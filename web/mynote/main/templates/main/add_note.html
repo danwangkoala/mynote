@@ -1,0 +1,11 @@
+{% extends "main/indexbase.html" %}
+{% block title %} Note List {% endblock %}
+{% load crispy_forms_tags %}
+{% block index-content %}
+    Add Note the following should be form
+    <form method="POST" action="/add_note/">
+        {% csrf_token %}
+        {{form | crispy}}
+        <button type="submit", name="save">Add</button>
+    </form>
+{% endblock %}

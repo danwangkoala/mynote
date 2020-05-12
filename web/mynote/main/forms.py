@@ -6,4 +6,3 @@ class AddNewNote(forms.Form):
     tag = forms.CharField(label = "Tag", max_length=200)
     link = forms.URLField(label = "Url")
     content = forms.CharField(label = "content", max_length=3000)
-    modify_date = timezone.now()

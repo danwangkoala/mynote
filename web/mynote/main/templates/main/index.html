@@ -1,18 +1,36 @@
-{% extends "main/base.html" %}
+{% extends "main/indexbase.html" %}
 {% block title %} Note List {% endblock %}
 
-{% block content %}
-    Add Note
-    <form method="POST" action="/index/">
-        {{form}}
-        <button type="submit", name="save">Add</button>
-    </form>
-
+{% block index-content %}
+    The note list:
     {% if note_list %}
         {% for nt in note_list %}
             <li>{{nt.tag}}</li>
         {% endfor%}
-    {% else% }
+    {% else %}
         <p>No note available</p>
     {% endif %}
+    <p>Add new note <a href="/add_note">here</a></p>
+
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+    <p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p><p>hahahaha</p>
+
 {% endblock %}

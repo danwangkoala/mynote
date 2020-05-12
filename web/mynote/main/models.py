@@ -9,7 +9,7 @@ class Category(models.Model):
 class Note(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="note", null=True)
     tag = models.CharField(max_length=200)
-    categroy = models.CharField(max_length=200)
+    category = models.CharField(max_length=200)
     modify_date = models.DateTimeField("date modified")
     link = models.URLField()
     content = models.TextField()

@@ -1,6 +1,6 @@
 {% extends 'main/base.html' %}
 {% block title %}
-Home
+HomeBase
 {% endblock %}  
 
 {% block main-content %}
@@ -10,7 +10,20 @@ Home
     </div>
 </div>
 <div class="caption text-center">
-    {% block register-content %}
-    {% endblock %}
+    <div id="content", name="content", class="main">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                {% block register-content %}
+                {% endblock %}
+            </div>
+        </div>      
+    </div>
+</div>
+<div id="contact">
+    <footer>
+        <div class="row justify-content-center">
+            &copy; Note Theme.
+        </div>
+    </footer>
 </div>
 {% endblock %}
